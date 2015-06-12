@@ -11,6 +11,7 @@ RUN apk add --update \
   ncurses \
   vim \
   gettext \
+  mercurial \
   logrotate \
   s6@testing && \
   rm -rf /var/cache/apk/* && \
