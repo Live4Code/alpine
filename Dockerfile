@@ -5,7 +5,7 @@ ADD rootfs /
 
 RUN apk-install -t \
   logrotate \
-  s6  && \
+  s6@testing  && \
   rm -rf /var/cache/apk/* && \
   mkdir -p /etc/logrotate.docker.d
 
