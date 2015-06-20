@@ -3,7 +3,7 @@ MAINTAINER Yue Chen <dspfac@gmail.com>
 
 ADD rootfs /
 
-RUN apk-install -t --update \
+RUN apk-install -t \
   logrotate \
   s6  && \
   rm -rf /var/cache/apk/* && \
